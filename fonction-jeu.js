@@ -23,8 +23,8 @@ document.querySelector('.btn-roll').addEventListener('click', function () {
     var dice2 = Math.floor(Math.random() * 6) + 1;
     document.getElementById('dice1').style.display = 'block';
     document.getElementById('dice2').style.display = 'block';
-    document.getElementById('dice1').src = './Images/dice-' + dice1 + '.png';
-    document.getElementById('dice2').src = './Images/dice-' + dice2 + '.png';
+    document.getElementById('dice1').src = './dice-' + dice1 + '.png';
+    document.getElementById('dice2').src = './dice-' + dice2 + '.png';
     
     if(dice1 === 6 && prevDiceRoll === 6) {
         scores[activePlayer] = 0;
